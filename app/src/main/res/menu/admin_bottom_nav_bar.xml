@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/icon_home"
+        android:title="Anasayfa"
+        android:id="@+id/admin_bottom_menu_home"/>
+
+    <item android:title="Arama"
+        android:id="@+id/bottom_menu_search"
+        android:icon="@drawable/icon_search"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/icon_upload"
+        android:title="Video Yükleme"
+        android:id="@+id/admin_bottom_menu_upload"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/icon_admin"
+        android:title="Kullanıcılar"
+        android:id="@+id/admin_bottom_menu_users"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/icon_profile"
+        android:title="Profil"
+        android:id="@+id/admin_bottom_menu_profile"/>
+</menu>

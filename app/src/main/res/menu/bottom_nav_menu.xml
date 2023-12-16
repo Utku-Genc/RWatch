@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Anasayfa"
+        android:id="@+id/bottom_menu_home"
+        android:icon="@drawable/icon_home"/>
+    <item android:title="Arama"
+        android:id="@+id/bottom_menu_search"
+        android:icon="@drawable/icon_search"/>
+    <item android:title="Profil"
+        android:id="@+id/bottom_menu_profile"
+        android:icon="@drawable/icon_profile"/>
+</menu>

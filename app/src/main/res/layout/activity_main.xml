@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/logo3" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/cubuk"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/logo_image"
+        app:dividerColor="@color/my_primary" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/alt_nav"
+        android:layout_below="@+id/cubuk" />
+
+    <LinearLayout
+        android:id="@+id/alt_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_nav_menu"
+            android:visibility="invisible"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/admin_bottom_nav_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            app:menu="@menu/admin_bottom_nav_bar" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/alt_nav"
+        android:layout_below="@id/cubuk" />
+
+</RelativeLayout>

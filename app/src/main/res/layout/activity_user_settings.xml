@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserSettingsActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/logo3"
+        android:id="@+id/logo_image" />
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/transpernt"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:src="@drawable/icon_back"
+        app:tint="@color/my_primary" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/cubuk"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/logo_image"
+        app:dividerColor="@color/my_primary" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cubuk"
+        android:layout_marginTop="0dp"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp" />
+
+</RelativeLayout>

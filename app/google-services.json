@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "682117513933",
+    "project_id": "kotlindeneme4",
+    "storage_bucket": "kotlindeneme4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682117513933:android:b5b2903c5e87f6edef1f84",
+        "android_client_info": {
+          "package_name": "com.example.kotlindeneme4"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwh3n_53_3naZXiEMUNTV9YWtyiENfB9g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

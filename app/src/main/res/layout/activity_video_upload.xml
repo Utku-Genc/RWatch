@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoUploadActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/post_view">
+
+
+        <EditText
+            android:id="@+id/dizi_isim_giris"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_thumbnail_view"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="top"
+            android:hint="Dİzi-Film Adı Yazınız"
+            android:padding="10dp"
+            android:background="@drawable/rounded_corner"
+            />
+
+        <EditText
+            android:id="@+id/bolum_ad_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dizi_isim_giris"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="top"
+            android:hint="Bölüm Adını Yazınız"
+
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:id="@+id/sezon_bolum_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bolum_ad_input"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/dizi_sezon_giris"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:id="@+id/sezon_bilgi_giris"
+                android:hint="Sezon Bilgisi Girin"
+                 />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/dizi_sezon_giris"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:id="@+id/bolum_bilgi_giris"
+                android:gravity="center"
+                android:hint="Bölüm Bilgisi Girin"
+                 />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/post_caption_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sezon_bolum_layout"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:hint="Açıklama Yazınız"
+            android:padding="10dp"
+            android:background="@drawable/rounded_corner"
+            />
+
+        <ImageView
+            android:id="@+id/post_thumbnail_view"
+            android:layout_width="360dp"
+            android:layout_height="202.5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Geri"
+                android:layout_weight="1"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:id="@+id/cancel_post_btn"/>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:id="@+id/progress_bar"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yayınla"
+                android:layout_weight="1"
+                android:id="@+id/submit_post_btn"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/upload_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_back"
+            android:id="@+id/back_btn"
+            android:background="@color/transpernt"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="10dp"
+            app:tint="@color/my_primary" />
+
+        <ImageView
+            android:id="@+id/add_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_upload"
+            app:tint="@color/my_primary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_icon"
+            android:gravity="center"
+            android:text="Video yüklemek için Tıkla"
+            android:textSize="20sp"
+            android:textColor="@color/my_primary"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
